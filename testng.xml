@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TN Test Regression Suite">
+  
+  
+  <listeners>
+     <listener class-name="com.qa.amazon.listeners.ExtentReportListener"/>
+</listeners> 
+
+<test name="Login Page Test">
+      
+      <classes>
+      <class name="com.qa.amazon.test.LoginTest"/>
+      </classes>
+  </test> 
+   
+  <test name="Account Page Test">    
+    <classes>
+       <class name="com.qa.amazon.test.AccountPageTest"/>
+    </classes>
+     
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
