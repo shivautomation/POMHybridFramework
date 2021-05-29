@@ -52,7 +52,7 @@ public class BasePage {
 		 prop=new Properties();
 		 
 		 try {
-			FileInputStream ip=new FileInputStream("/AmazonAutomation/src/main/java/com/qa/automation/config/Config.properties");
+			FileInputStream ip=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/automation/config/Config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
